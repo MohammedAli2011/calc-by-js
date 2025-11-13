@@ -5,10 +5,6 @@ let string = "";
 
 arr.forEach(button => {
     button.addEventListener("click", (e) => {
-        // if (e.target.innerHTML === "Del") {
-        //     string = string.substring(0, string.length);
-        //     inp.value = string;
-        // }
         if (e.target.innerHTML === "=") {
             string = String(eval(string));
             inp.value = string;
@@ -28,7 +24,5 @@ arr.forEach(button => {
             string += e.target.innerHTML
             inp.value = string
         }
-        console.log(e.target)
-
     })
 });
