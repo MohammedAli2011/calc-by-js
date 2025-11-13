@@ -4,11 +4,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body>
+    <div class="container vh-100 d-flex justify-content-center align-items-center">
+        <div class="calculator w-auto border border-black p-3 rounded bg-dark bg-gradient">
+            <h1 class="memo w-25 fw-bolder">Memo</h1>
 
+            <input class="screen w-100 bg-dark text-white border border-white rounded py-3 px-2 mb-3 mt-4 fs-4"
+                type="text" name="num" id="total" placeholder="0">
+
+            <div class="buttons d-flex align-items-center justify-content-center flex-column">
+                <div class="box mt-3 d-flex justify-content-center align-items-center">
+                    <button
+                        class="button bg-secondary-subtle fs-4 shadow-sm border-0 text-primary d-flex justify-content-center align-items-center px-3 py-3 rounded-pill">Ac</button>
+                    <button
+                        class="button bg-secondary-subtle ms-2 me-1 fs-4 shadow-sm border-0 text-primary d-flex justify-content-center align-items-center px-3 py-3 rounded-pill">Del</button>
+                    <button
+                        class="button bg-secondary-subtle ms-1 me-2 fs-4 shadow-sm border-0 text-primary d-flex justify-content-center align-items-center px-3 py-3 rounded-pill">%</button>
+                    <button
+                        class="button bg-secondary-subtle fs-4 shadow-sm border-0 text-primary d-flex justify-content-center align-items-center px-3 py-3 rounded-pill">/</button>
+                </div>
+                <div
+                    class="box mt-3 d-flex justify-content-center align-items-center d-flex justify-content-center align-items-center">
+                    <button
+                        class="button bg-secondary-subtle fs-4 shadow-sm border-0 text-dark d-flex justify-content-center align-items-center px-4 py-3 rounded-pill">7</button>
+                    <button
+                        class="button bg-secondary-subtle ms-2 me-1 fs-4 shadow-sm border-0 text-dark d-flex justify-content-center align-items-center px-4 py-3 rounded-pill">8</button>
+                    <button
+                        class="button bg-secondary-subtle ms-1 me-2 fs-4 shadow-sm border-0 text-dark d-flex justify-content-center align-items-center px-4 py-3 rounded-pill">9</button>
+                    <button
+                        class="button bg-secondary-subtle fs-4 shadow-sm border-0 text-primary d-flex justify-content-center align-items-center px-4 py-3 rounded-pill">*</button>
+                </div>
+                <div class="box mt-3 d-flex justify-content-center align-items-center">
+                    <button
+                        class="button bg-secondary-subtle fs-4 shadow-sm border-0 text-dark d-flex justify-content-center align-items-center px-4 py-3 rounded-pill">4</button>
+                    <button
+                        class="button bg-secondary-subtle ms-2 me-1 fs-4 shadow-sm border-0 text-dark d-flex justify-content-center align-items-center px-4 py-3 rounded-pill">5</button>
+                    <button
+                        class="button bg-secondary-subtle ms-1 me-2 fs-4 shadow-sm border-0 text-dark d-flex justify-content-center align-items-center px-4 py-3 rounded-pill">6</button>
+                    <button
+                        class="button bg-secondary-subtle fs-4 shadow-sm border-0 text-primary d-flex justify-content-center align-items-center px-4 py-3 rounded-pill">-</button>
+                </div>
+                <div class="box mt-3 d-flex justify-content-center align-items-center">
+                    <button
+                        class="button bg-secondary-subtle fs-4 shadow-sm border-0 text-dark d-flex justify-content-center align-items-center px-4 py-3 rounded-pill">1</button>
+                    <button
+                        class="button bg-secondary-subtle ms-2 me-1 fs-4 shadow-sm border-0 text-dark d-flex justify-content-center align-items-center px-4 py-3 rounded-pill">2</button>
+                    <button
+                        class="button bg-secondary-subtle ms-1 me-2 fs-4 shadow-sm border-0 text-dark d-flex justify-content-center align-items-center px-4 py-3 rounded-pill">3</button>
+                    <button
+                        class="button bg-secondary-subtle fs-4 shadow-sm border-0 text-primary d-flex justify-content-center align-items-center px-4 py-3 rounded-pill">+</button>
+                </div>
+                <div class="box mt-3 d-flex justify-content-center align-items-center">
+                    <button
+                        class="button bg-secondary-subtle fs-4 shadow-sm border-0 text-dark d-flex justify-content-center align-items-center px-4 py-3 rounded-pill">00</button>
+                    <button
+                        class="button bg-secondary-subtle ms-2 me-1 fs-4 shadow-sm border-0 text-dark d-flex justify-content-center align-items-center px-4 py-3 rounded-pill">0</button>
+                    <button
+                        class="button bg-secondary-subtle ms-1 me-2 fs-4 shadow-sm border-0 text-dark d-flex justify-content-center align-items-center px-4 py-3 rounded-pill">.</button>
+                    <button
+                        class="button bg-primary fs-4 shadow-sm border-0 text-white d-flex justify-content-center align-items-center px-4 py-3 rounded-pill">=</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
     <script src="index.js"></script>
 </body>
 
